@@ -4,8 +4,7 @@ from gendiff.gendiff import generate_diff
 
 
 def main():
-    parser()
-    generate_diff()
+    generate_diff(parser(), parser())
 
 
 if __name__ == '__main__':

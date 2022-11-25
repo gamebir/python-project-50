@@ -16,6 +16,7 @@ gendiff = "gendiff.scripts.gendiff:main"
 [tool.poetry.group.dev.dependencies]
 flake8 = "^5.0.4"
 yapf = "^0.32.0"
+autopep8 = "^2.0.0"
 
 [build-system]
 requires = ["poetry-core"]
