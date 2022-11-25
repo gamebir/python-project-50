@@ -1,6 +1,4 @@
 import json
-file1 = json.load(open('file1.json'))
-file2 = json.load(open('file2.json'))
 
 
 def get_matching_keys(file1, file2):
@@ -24,6 +22,8 @@ def get_not_matching_keys(file1, file2):
 
 
 def generate_diff(file1, file2):
+    file1 = json.load(open('file1.json'))
+    file2 = json.load(open('file2.json'))
     combined_list = list(set(sorted(file1) + sorted(file2)))
     combined_list.sort()
     for key in combined_list:
