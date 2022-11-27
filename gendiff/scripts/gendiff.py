@@ -4,7 +4,8 @@ from gendiff.gendiff import generate_diff
 
 
 def main():
-    print(generate_diff(parser(), parser()))
+    arg = parser()
+    print(generate_diff(arg.first_file, arg.second_file))
 
 
 if __name__ == '__main__':
