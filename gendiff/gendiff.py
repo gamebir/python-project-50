@@ -2,7 +2,7 @@ import json
 
 
 def generate_diff(file1, file2):
-    with open (file1) as f1 , open (file2) as f2:
+    with open(file1) as f1, open(file2) as f2:
         file1 = json.load(f1)
         file2 = json.load(f2)
         all_keys = list(set(file1) | set(file2))
